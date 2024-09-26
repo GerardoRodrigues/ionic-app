@@ -25,3 +25,133 @@
 #container a {
   text-decoration: none;
 }
+
+ion-content {
+  --background: linear-gradient(to bottom, #6460f0, #dedede);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+
+    .app-bar {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+
+      ion-icon {
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+      }
+    }
+
+    .logo img {
+      width: 80px;
+      margin-top: 50px;
+    }
+
+    h2 {
+      color: white;
+      margin-top: 10px;
+      font-size: 24px;
+    }
+  }
+
+  ion-card {
+    width: 90%;
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(5, 5, 5, 0.1);
+
+    ion-card-content {
+      text-align: center;
+      padding: 20px;
+
+      h1 {
+        font-size: 22px;
+        margin-bottom: 10px;
+        color: #4a4a4a;
+      }
+
+      p {
+        font-size: 14px;
+        margin-bottom: 20px;
+        color: #7a7a7a;
+      }
+
+      ion-button {
+        width: 100%;
+        border-radius: 8px;
+        --padding-start: 0;
+        --padding-end: 0;
+
+        .ion-margin-buttom {
+          margin-bottom: 15px;
+        }
+
+        ion-button[fill="outline"] {
+          --border-radius: 8px;
+          --border-width: 2px;
+          --border-color: #6366f1;
+          --color: #6366f1;
+        }
+      }
+
+      .line-text {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: 20px 0;
+
+        .lines {
+          flex-grow: 1;
+          height: 1px; 
+          background-color: #ccc; 
+          margin: 0 10px;
+
+          .text {
+            font-weight: bold;
+          }
+        }
+      }
+
+      .social {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+
+        ion-button {
+          --background: transparent;
+          --border-radius: 50%;
+          width: 45px;
+          height: 45px;
+        }
+
+        .btn-fb {
+          --background: #4267B2;
+          color: white;
+        }
+        
+        .btn-tw {
+          --background: #1DA1F2;
+          color: white;
+        }
+        
+        .btn-go {
+          --background: #DB4437;
+          color: white;
+        }
+        
+        .btn-ph {
+          --background: #737373;
+          color: white;
+        }
+      }
+    }
+  }
+}

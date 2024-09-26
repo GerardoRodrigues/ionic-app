@@ -1,20 +1,42 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content>
+  <div class="header">
+    <div class="app-bar">
+      <ion-icon name="arrow-back"></ion-icon>
+    </div>
+    <div class="logo">
+      <img src="../../assets/icon/favicon.png" alt="Logo">
+    </div>
+    <h2>APP ICON</h2>
   </div>
+
+  <ion-card class="ion-padding" color="dark">
+    <ion-card-content>
+      <h1>Welcome to App Name</h1>
+      <p>Discover amazing things around you</p>
+
+      <ion-button expand="block" class="ion-margin-buttom" routerLink="/login">Sing in</ion-button>
+      <ion-button expand="block" fill="outline" routerLink="/register">Sing up</ion-button>
+
+      <div class="line-text">
+        <span class="lines"></span>
+        <span class="text">Or connect using</span>
+        <span class="lines"></span>
+      </div>
+
+      <div class="social">
+        <ion-button class="btn-fb">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </ion-button>
+        <ion-button class="btn-tw">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </ion-button>
+        <ion-button class="btn-go">
+          <ion-icon name="logo-google"></ion-icon>
+        </ion-button>
+        <ion-button class="btn-ph">
+          <ion-icon name="call-outline"></ion-icon>
+        </ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
